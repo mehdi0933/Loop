@@ -5,16 +5,16 @@ public class AlphabetPrinter {
 
        char letterA = 'A';
 
-       char letterMinusculez = 'z';
+       char letterMinusculeZ = 'z';
 
 
-        while (letterA <= letterMinusculez){
+        while (letterA <= letterMinusculeZ){
 
             System.out.print(letterA);
 
             char lettreMinisculeA =  letterA+=32;
 
-          while ( lettreMinisculeA <= letterMinusculez){
+          while ( lettreMinisculeA <= letterMinusculeZ){
 
              System.out.print(lettreMinisculeA);
 
