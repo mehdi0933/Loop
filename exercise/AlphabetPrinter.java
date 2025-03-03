@@ -2,27 +2,30 @@ package javacore.chapter03.exercise;
 
 public class AlphabetPrinter {
     public static void main(String[] args) {
-        char letterA = 'A';
-        char letter = 'A';
 
-        char letterz = 'z';
-        while (letterA <= letterz){
+       char letterA = 'A';
 
-            System.out.print(letter);
+       char letterMinusculez = 'z';
 
-          char lettrea =  letterA+=32;
-          while ( lettrea <= letterz){
 
-             System.out.print(lettrea);
+        while (letterA <= letterMinusculez){
 
-              lettrea++;
+            System.out.print(letterA);
+
+            char lettreMinisculeA =  letterA+=32;
+
+          while ( lettreMinisculeA <= letterMinusculez){
+
+             System.out.print(lettreMinisculeA);
+
+              lettreMinisculeA++;
 
           }
-break;
+          break;
 
 
+          // ce qui sort de dans la console :  Aabcdefghijklmnopqrstuvwxyz
 
-//ACCEEGGIIKKMMOOQQSSUUWWYY[[]]__aacceeggiikkmmooqqssuuwwyy{
         }
     }
 }
