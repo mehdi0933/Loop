@@ -3,28 +3,44 @@ package javacore.chapter03.exercise;
 public class SmallestDivisorFinder {
     public static void main(String[] args) {
 
-        int number = 10;
+        // value to be tested  3 / 4 / 5 / 6 / 7 / 8 / 9
+        int number  = 11;
 
-        // value to be tested 2 / 3 / 4 / 5 / 6 / 7 / 8 / 9
-        int divisor = 9 ;
+        int divisor = 2;
+
 
         while(number % divisor != 0){
 
-            System.out.println("le plus petit diviseur du nombres" + number + " est :" +" "+ number % divisor);
+           if(number % divisor != 1 && divisor != number  ){
+               System.out.println("le plus petit diviseur de  " + number + " et de " + divisor + " est :" +" "+ divisor);
+           }
+
 
             divisor++;
 
         }
 
-        // le resultat affiche est : le plus petit diviseur du nombres10 est : 1
+        /**
+         * resultat de la console.
+         * le plus petit diviseur de  11 et de 3 est : 3
+         * le plus petit diviseur de  11 et de 4 est : 4
+         * le plus petit diviseur de  11 et de 6 est : 6
+         * le plus petit diviseur de  11 et de 7 est : 7
+         * le plus petit diviseur de  11 et de 8 est : 8
+         * le plus petit diviseur de  11 et de 9 est : 9
+         */
 
-        while(number % divisor == 0){
+        System.out.println( " exercice bonus");
 
-            System.out.println(number + " est paire");
+         number  = 7;
 
-            divisor++;
+
+        if((number == 2 || number == 3 ||  number == 5) || number % 2 != 0 && number % 3 != 0 && number % 5 != 0){
+
+            System.out.println("Ce nombre est premier !");
 
         }
-        // le resultat affiche est : 10 est paire
+
+        //le resultat de la console : Ce nombre est premier !
     }
 }

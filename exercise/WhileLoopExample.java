@@ -3,42 +3,59 @@ package javacore.chapter03.exercise;
 public class WhileLoopExample {
     public static void main(String[] args){
 
-        int loopCounter = 2;
+        int loopCounter = 1;
 
-        int valueMax = 20;
+        int valueMax = 10;
+
+
+        while (loopCounter <= valueMax){
+
+            System.out.println("une suite de nombre "+loopCounter);
+
+            loopCounter++;
+
+        }
+        /**
+         * le resultat a la console est :
+         * une suite de nombre 1
+         * une suite de nombre 2
+         * une suite de nombre 3
+         * une suite de nombre 4
+         * une suite de nombre 5
+         * une suite de nombre 6
+         * une suite de nombre 7
+         * une suite de nombre 8
+         * une suite de nombre 9
+         * une suite de nombre 10
+         */
+
+
+        loopCounter = 2;
+
+        valueMax = 20;
 
 
          while (loopCounter <= valueMax){
 
              System.out.println("les multiple de 2 de 2 jusqu'a 20 : " + loopCounter );
 
-             loopCounter++;
+             loopCounter += 2;
 
         }
 
 
         /**
          * le resultat affiche a la consosole est :
-         *les multiple de 2 jusqu'a 20 : 2
-         * les multiple de 2 jusqu'a 20 : 3
-         * les multiple de 2 jusqu'a 20 : 4
-         * les multiple de 2 jusqu'a 20 : 5
-         * les multiple de 2 jusqu'a 20 : 6
-         * les multiple de 2 jusqu'a 20 : 7
-         * les multiple de 2 jusqu'a 20 : 8
-         * les multiple de 2 jusqu'a 20 : 9
-         * les multiple de 2 jusqu'a 20 : 10
-         * les multiple de 2 jusqu'a 20 : 11
-         * les multiple de 2 jusqu'a 20 : 12
-         * les multiple de 2 jusqu'a 20 : 13
-         * les multiple de 2 jusqu'a 20 : 14
-         * les multiple de 2 jusqu'a 20 : 15
-         * les multiple de 2 jusqu'a 20 : 16
-         * les multiple de 2 jusqu'a 20 : 17
-         * les multiple de 2 jusqu'a 20 : 18
-         * les multiple de 2 jusqu'a 20 : 19
-         * les multiple de 2 jusqu'a 20 : 20
-         *
+         les multiple de 2 de 2 jusqu'a 20 : 2
+         les multiple de 2 de 2 jusqu'a 20 : 4
+         les multiple de 2 de 2 jusqu'a 20 : 6
+         les multiple de 2 de 2 jusqu'a 20 : 8
+         les multiple de 2 de 2 jusqu'a 20 : 10
+         les multiple de 2 de 2 jusqu'a 20 : 12
+         les multiple de 2 de 2 jusqu'a 20 : 14
+         les multiple de 2 de 2 jusqu'a 20 : 16
+         les multiple de 2 de 2 jusqu'a 20 : 18
+         les multiple de 2 de 2 jusqu'a 20 : 20
          */
 
         loopCounter = 1;

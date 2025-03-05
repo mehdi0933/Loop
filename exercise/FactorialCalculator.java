@@ -22,16 +22,16 @@ public class FactorialCalculator {
         }
 
 
-        while (count < number){
+        while (count <= number){
 
             result= result * count;
 
             count++;
 
         }
-        System.out.println(" la factorielle de " + ""+number + " est : " + result);
+        System.out.println(" la factorielle de " + "" + number + " est : " + result);
 
-        // la factorielle de 6 est : 120 le resultat affiche a la console
+        //  la factorielle de 6 est : 720 le resultat affiche a la console
 
     }
 }

@@ -5,27 +5,51 @@ public class AlphabetPrinter {
 
        char letterA = 'A';
 
+       char letterAPrime = 'A';
+
+        char letterZ = 'Z';
+
+       char letterMinusculeA = 'a';
+
        char letterMinusculeZ = 'z';
 
+        System.out.println("exercice demande ");
 
-        while (letterA <= letterMinusculeZ){
+        while (letterA <= letterZ){
 
-            System.out.print(letterA);
+            System.out.print(letterA );
 
-            char lettreMinisculeA =  letterA+=32;
-
-          while ( lettreMinisculeA <= letterMinusculeZ){
-
-             System.out.print(lettreMinisculeA);
-
-              lettreMinisculeA++;
-
-          }
-          break;
-
-
-          // ce qui sort de dans la console :  Aabcdefghijklmnopqrstuvwxyz
+            letterA++;
 
         }
+
+        System.out.println("\n"+"exercice bonus");
+
+        letterA = 'A';
+
+        while (letterMinusculeA <= letterMinusculeZ){
+
+
+            if (letterA <= letterAPrime){
+
+                System.out.print(letterA);
+
+                letterA++;
+
+            }
+            System.out.print(letterMinusculeA);
+
+            letterMinusculeA++;
+
+        }
+
+        /**
+         * ce qui sort de dans la console :
+         * exercice demande
+         * ABCDEFGHIJKLMNOPQRSTUVWXYZ
+         * exercice bonus
+         * Aabcdefghijklmnopqrstuvwxyz
+         */
     }
 }
+
