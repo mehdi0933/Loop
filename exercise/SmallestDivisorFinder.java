@@ -12,7 +12,7 @@ public class SmallestDivisorFinder {
         while(number % divisor != 0){
 
            if(number % divisor != 1 && divisor != number  ){
-               System.out.println("le plus petit diviseur de  " + number + " et de " + divisor + " est :" +" "+ divisor);
+               System.out.println("le plus petit diviseur de " + number + " et de " + divisor + " est :" +" "+ number % divisor);
            }
 
 
@@ -22,12 +22,12 @@ public class SmallestDivisorFinder {
 
         /**
          * resultat de la console.
-         * le plus petit diviseur de  11 et de 3 est : 3
-         * le plus petit diviseur de  11 et de 4 est : 4
-         * le plus petit diviseur de  11 et de 6 est : 6
-         * le plus petit diviseur de  11 et de 7 est : 7
-         * le plus petit diviseur de  11 et de 8 est : 8
-         * le plus petit diviseur de  11 et de 9 est : 9
+         * le plus petit diviseur de  11 et de 3 est : 2
+         * le plus petit diviseur de  11 et de 4 est : 3
+         * le plus petit diviseur de  11 et de 6 est : 5
+         * le plus petit diviseur de  11 et de 7 est : 4
+         * le plus petit diviseur de  11 et de 8 est : 3
+         * le plus petit diviseur de  11 et de 9 est : 3
          */
 
         System.out.println( " exercice bonus");
