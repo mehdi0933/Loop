@@ -1,7 +1,9 @@
 package javacore.chapter03.exercise;
 
 public class WhileLoopExample {
-    public static void main(String[] args){
+    public static void main(String[] args) throws InterruptedException {
+
+
 
         int loopCounter = 1;
 
@@ -95,4 +97,6 @@ public class WhileLoopExample {
          * Process finished with exit code 0
          */
     }
+
+
 }
