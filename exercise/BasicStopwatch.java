@@ -11,12 +11,7 @@ public class BasicStopwatch {
             while (true) {
 
                 Thread.sleep(1000);
-                if(s < 10){
-                    System.out.println("0"+s);
-                } else if (s> 10) {
-                    System.out.println(s);
 
-                }
 
 
                 s++;
@@ -26,12 +21,7 @@ public class BasicStopwatch {
                if (s >= 59) {
 
                     s = 0;
-                   if(m < 10){
-                       System.out.println("0"+m);
-                   } else if (m> 10) {
-                       System.out.println(m);
 
-                   }
                     m++;
 
                 }
@@ -39,24 +29,12 @@ public class BasicStopwatch {
                 if (m >= 60) {
 
                     m = 0;
-                    if(h < 10){
-                        System.out.println("0"+h);
-                    } else if (h > 10) {
-                        System.out.println(h);
-
-                    }
-                    h++;
-
-                    System.out.print(h);
-                }
-                if (h > 23) {
-
-                    h = 0;
 
                     h++;
 
-                    System.out.print(h);
                 }
+
+                System.out.printf("%02d:%02d:%02d%n", h, m, s);
 
             }
         }
