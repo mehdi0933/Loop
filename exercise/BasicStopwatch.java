@@ -34,6 +34,13 @@ public class BasicStopwatch {
 
                 }
 
+                if (h >= 24) {
+
+                    h = 0;
+                    
+                }
+
+
                 System.out.printf("%02d:%02d:%02d%n", h, m, s);
 
             }
