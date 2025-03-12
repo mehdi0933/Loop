@@ -4,46 +4,55 @@ public class BasicStopwatch {
 
     public static void main(String[] args) throws InterruptedException {
 
-            int s = 0;
-            int m = 0;
-            int h = 0;
+            int i = 0;
 
-            while (true) {
+            int secoond = 0;
+            int minute  = 0;
+            int hours   = 0;
+
+
+            while (i < 100) {
 
                 Thread.sleep(1000);
 
 
 
-                s++;
+                secoond++;
 
 
 
-               if (s >= 59) {
+               if (secoond >= 59) {
 
-                    s = 0;
+                    secoond = 0;
 
-                    m++;
-
-                }
-
-                if (m >= 60) {
-
-                    m = 0;
-
-                    h++;
+                    minute++;
 
                 }
 
-                if (h >= 24) {
+                if (minute >= 60) {
 
-                    h = 0;
-                    
+                    minute = 0;
+
+                    secoond++;
+
                 }
 
+                if (hours  >= 24) {
 
-                System.out.printf("%02d:%02d:%02d%n", h, m, s);
+                    hours  = 0;
+
+                }
+
+                String displayHours   = hours   < 10  ? "0" + hours    : "" + hours ;
+                String displayMinute  = minute  < 10  ? "0" + minute   : "" + minute;
+                String displaySecoond = secoond < 10  ? "0" + secoond  : "" + secoond;
+
+                System.out.println(displayHours+":"+displayMinute+":"+displaySecoond);
+
+              // System.out.printf("%02d:%02d:%02d%n", hours , minute, secoond);
+                i++;
 
             }
-        }
 
-    }
+
+    }}

@@ -8,13 +8,17 @@ public class FullPyramid {
         for (int i = 0; i < numberOfRows; i++){
 
             System.out.println("");
+
             for (int l = 0; l < numberOfRows - i-1; l++) {
+
                 System.out.print(" ");
+
             }
 
             for (int J = 0; J < i; J++){
 
                 for (int k = 0; k < J; k++){
+
                     System.out.print("*");
 
                 }

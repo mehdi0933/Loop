@@ -8,7 +8,6 @@ public class SmallestDivisorFinder {
 
         int divisor = 2;
 
-
         while(number % divisor != 0){
 
            if(number % divisor != 1 && divisor != number  ){
