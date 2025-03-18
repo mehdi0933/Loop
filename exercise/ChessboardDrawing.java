@@ -10,21 +10,21 @@ public class ChessboardDrawing {
                 for (int i = 0; i < numberOfRows; i++){
 
                     System.out.println("");
-
                     for (int l = 0; l < numberOfRows ; l++) {
 
-                    }
 
                     for (int J = 0; J <  numberOfRows  ; J++){
-                        System.out.print(" # ");
-                        
-                          /** ca fonctionne pas
-                           * if(J % 2 == 0){
-                               System.out.print(" _ ");
+
+                          //ca fonctionne pas
+                            if(J % 2 == 0){
+                               System.out.print(" # ");
                            } else if (J % 2 != 0) {
-                               System.out.print("#");
-                           }*/
+                               System.out.print("-");
+                           }
+
+
                     }
+
 
                 }
                 
@@ -38,6 +38,6 @@ public class ChessboardDrawing {
                  *  #  #  #  #  #
                  */
             }
-        }
+        }}
 
 

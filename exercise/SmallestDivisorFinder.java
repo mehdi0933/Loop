@@ -4,7 +4,7 @@ public class SmallestDivisorFinder {
     public static void main(String[] args) {
 
         // value to be tested  3 / 4 / 5 / 6 / 7 / 8 / 9
-        int number  = 11;
+        int number  = 50;
 
         int divisor = 2;
 
