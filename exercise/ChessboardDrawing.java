@@ -2,8 +2,6 @@ package javacore.chapter03.exercise;
 
 public class ChessboardDrawing {
     public static void main(String[] args) {
-// pas encore fini aucune idee !
-
 
                 int numberOfRows = 5;
                 char hashatag = '#';
@@ -14,24 +12,29 @@ public class ChessboardDrawing {
                     System.out.println("");
 
                     for (int j = 0; j < numberOfRows ; j++) {
+
                         if(i % 2 == 0){
+
                             if (j % 2  == 0){
 
-                                System.out.print(hashatag);
+                                System.out.print(hashatag + " " );
 
                             }else{
 
-                                System.out.print(tired);
+                                System.out.print(tired + " " );
 
                             }
                         }else {
+
                             if (j % 2  == 0){
-                                System.out.print(tired);
+
+                                System.out.print(tired + " " );
+
                             }else {
-                                System.out.print(hashatag);
+
+                                System.out.print(hashatag + " " );
                             }
                         }
-                     
 
                    }
 
@@ -40,11 +43,11 @@ public class ChessboardDrawing {
 
 
                 /** resultat de la console
-                 *  #  #  #  #  #
-                 *  #  #  #  #  #
-                 *  #  #  #  #  #
-                 *  #  #  #  #  #
-                 *  #  #  #  #  #
+                 * # - # - #
+                 * - # - # -
+                 * # - # - #
+                 * - # - # -
+                 * # - # - #
                  */
     }
 }
