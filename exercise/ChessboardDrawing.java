@@ -6,25 +6,34 @@ public class ChessboardDrawing {
 
 
                 int numberOfRows = 5;
+                char hashatag = '#';
+                char tired    = '-';
 
                 for (int i = 0; i < numberOfRows; i++){
 
                     System.out.println("");
-                    for (int l = 0; l < numberOfRows ; l++) {
 
+                    for (int j = 0; j < numberOfRows ; j++) {
+                        if(i % 2 == 0){
+                            if (j % 2  == 0){
 
-                    for (int J = 0; J <  numberOfRows  ; J++){
+                                System.out.print(hashatag);
 
-                          //ca fonctionne pas
-                            if(J % 2 == 0){
-                               System.out.print(" # ");
-                           } else if (J % 2 != 0) {
-                               System.out.print("-");
-                           }
+                            }else{
 
+                                System.out.print(tired);
 
-                    }
+                            }
+                        }else {
+                            if (j % 2  == 0){
+                                System.out.print(tired);
+                            }else {
+                                System.out.print(hashatag);
+                            }
+                        }
+                     
 
+                   }
 
                 }
                 
@@ -37,7 +46,7 @@ public class ChessboardDrawing {
                  *  #  #  #  #  #
                  *  #  #  #  #  #
                  */
-            }
-        }}
+    }
+}
 
 
