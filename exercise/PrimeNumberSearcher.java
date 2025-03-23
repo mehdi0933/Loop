@@ -8,16 +8,19 @@ public class PrimeNumberSearcher {
         int dividende = 12;
 
         for (int  diviseurPotentiel = 2; diviseurPotentiel < dividende; diviseurPotentiel++) {
+
           if (dividende % diviseurPotentiel == 0) {
 
              System.out.println("le plus petit diviseur est : " + diviseurPotentiel);
-              diviseurPotentiel = dividende;
+             diviseurPotentiel = dividende;
+              /** le resultat le plus petit diviseur est : 2  */
+
           }
+
         }
 
 
 
-/** le resultat le plus petit diviseur est : 2  */
 
         /** trouver les 50 1er nombre 1er **/
 
@@ -29,16 +32,19 @@ public class PrimeNumberSearcher {
 
         while (countLoop< numberLoopMax){
 
-            boolean nomberPrime = true;
+            boolean isNomberPrime = true;
+
             for (int  diviseurPotentiel = 2; diviseurPotentiel < number; diviseurPotentiel++) {
 
                 if (number % diviseurPotentiel == 0) {
-                    nomberPrime =false;
+
+                    isNomberPrime = false;
+
                 }
 
             }
 
-            if(nomberPrime){
+            if(isNomberPrime){
 
                 System.out.println(number);
                 countLoop++;
@@ -46,6 +52,7 @@ public class PrimeNumberSearcher {
             }
 
             number++;
+
         }
 
 /** le resultat 2
