@@ -22,7 +22,7 @@ public class PrimeNumberSearcher {
 
 
 
-                            /** trouver les 50 1er nombres 1er **/
+        /** trouver les 50 1er nombre 1er **/
 
 
 

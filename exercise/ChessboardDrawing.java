@@ -3,42 +3,45 @@ package javacore.chapter03.exercise;
 public class ChessboardDrawing {
     public static void main(String[] args) {
 
-                int numberOfRows = 5;
-                char hashatag = '#';
-                char tired    = '-';
+     int numberOfRows = 5;
+     char hashatag = '#';
+     char tired    = '-';
 
-                for (int i = 0; i < numberOfRows; i++){
+     for (int i = 0; i < numberOfRows; i++){
 
-                    System.out.println("");
+      System.out.println("");
 
-                    for (int j = 0; j < numberOfRows ; j++) {
+      for (int j = 0; j < numberOfRows ; j++) {
 
-                        if(i % 2 == 0){
+       if(i % 2 == 0){
 
-                            if (j % 2  == 0){
+        if (j % 2  == 0){
 
-                                System.out.print(hashatag + " " );
+        System.out.print(hashatag + " " );
 
-                            }else{
+       }else{
 
-                                System.out.print(tired + " " );
+        System.out.print(tired + " " );
 
-                            }
-                        }else {
+       }
 
-                            if (j % 2  == 0){
+       }else {
 
-                                System.out.print(tired + " " );
+        if (j % 2  == 0){
 
-                            }else {
+            System.out.print(tired + " " );
 
-                                System.out.print(hashatag + " " );
-                            }
-                        }
+        }else {
 
-                   }
+            System.out.print(hashatag + " " );
 
-                }
+        }
+
+       }
+
+      }
+
+     }
                 
 
 
