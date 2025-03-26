@@ -13,7 +13,9 @@ public class AlphabetPrinter {
 
        char letterMinusculeZ = 'z';
 
-        System.out.println(" exercice demande ");
+        /**
+         *          exercice demande
+         */
 
         while (letterA <= letterZ){
 
@@ -22,8 +24,10 @@ public class AlphabetPrinter {
             letterA++;
 
         }
-
-        System.out.println("\n"+"exercice bonus");
+/**
+ * exercice bonus  sans utilisation +32
+ */
+        System.out.println("\n");
 
         letterA = 'A';
 

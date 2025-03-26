@@ -8,6 +8,7 @@ public class PerfectNumberFinder {
         int number = 21;
         int resultat = 0;
         int addition = 0;
+
         for(int i = 1 ; i < number; i++  ) {
             if(  number % i  == 0){
 
@@ -17,7 +18,7 @@ public class PerfectNumberFinder {
 
             }
 
-        }
+         }
         if( addition == number){
             System.out.println("le nombre est parfait");
         }else {
